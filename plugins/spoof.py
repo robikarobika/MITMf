@@ -87,7 +87,7 @@ class Spoof(Plugin):
     def options(self, options):
         group = options.add_mutually_exclusive_group(required=False)
         group.add_argument('--arp', dest='arp', action='store_true', help='Redirect traffic using ARP spoofing')
-        group.add_argument('--icmp', dest='icmp', action='store_true', help='Redirect traffic using ICMP redirects')
+        options.add_argument('--icmp', dest='icmp', action='store_true', help='Redirect traffic using ICMP redirects')
         group.add_argument('--dhcp', dest='dhcp', action='store_true', help='Redirect traffic using DHCP offers')
         options.add_argument('--dns', dest='dns', action='store_true', help='Proxy/Modify DNS queries')
         options.add_argument('--netmask', dest='netmask', type=str, default='255.255.255.0', help='The netmask of the network')
