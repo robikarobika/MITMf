@@ -31,7 +31,7 @@ class Spoof(Plugin):
 
         from core.utils import iptables, shutdown, set_ip_forwarding
         #Makes scapy more verbose
-        debug = False
+        debug = True
 
         if options.arp:
             if not options.gateway:
