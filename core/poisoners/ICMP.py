@@ -30,7 +30,7 @@ class ICMPpoisoner():
 
     def __init__(self, options):
 
-        self.target        = options.target
+        self.target        = options.targets
         self.gateway       = options.gateway
         self.interface     = options.interface
         self.ip_address    = options.ip
